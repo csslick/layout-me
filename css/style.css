@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  transition: 0.4s;
+}
+html, body{
+  height: 100%;
+}
+ul{
+  list-style-type: none;
+}
+h2{ margin-bottom: 1em;}
+.row img{
+  width: 100%;
+}
+section{
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#home, #about, #works, #contact{
+  position: relative;
+}
+header{
+  position: fixed;
+  left: 0; right: 0;
+  /* height: 60px; */
+  z-index: 99;
+  background: rgba(255,255,255,0);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+header.bg-active{
+  background: #fff;
+}
+header h1{ 
+  float: left;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+header #gnb{ 
+  float: right;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  }
+#gnb a{ 
+  padding-left: 30px;
+  padding-right:30px;
+}
+
+/* 섹션 기본 배색 */
+#home{
+  background: #f80;
+}
+#about{
+  background: #fff;
+}
+#works{
+  background: #efefef;
+}
+#contact{
+  background: #fff;
+}
+
+/* 콘텐츠 세부 */
+#home{
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#home p{
+  font-size: 1.4em;
+}
+#about article:last-child{
+  background: #efefef;
+}
+#works ul li{
+  /* margin-bottom: 20px; */
+  padding: 0 2px 2px 0;
+}
+#about .row article:nth-child(2){
+  padding-left: 40px;
+}
+#about article:last-child{
+  /* 여백 조정 */
+  margin-top: 70px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#contact .form{
+  padding-right: 40px; /* 여백 조정(Gutter) */
+}
+#contact .address{
+  padding-top: 80px;
+}
+
+
+/* 모바일 메뉴 미디어쿼리 */
+#toggle-btn{
+  display: none;
+  color: #444;
+}
+
+@media (max-width: 767px){
+  header{
+    padding-left: 0!important;
+    padding-right: 0!important;
+  }
+  #toggle-btn{
+    display: block;
+    float: right;
+    font-size: 30px;
+    margin-top: 8px;
+    padding-right: 20px;
+   }
+  #gnb{
+    /* clear: both; */
+    float: none;
+    width: 100%;
+    background: #fff;
+    display: none;
+    margin-top: 0px;
+  }
+  #gnb.show{ display: block;}
+  #gnb a{
+    display: block;
+    padding: 10px 20px;
+  }
+
+  #about .row article:nth-child(2){
+    padding-left: 20px; /* 기본 여백(Gutter) */
+  }
+  #contact .form{
+    padding-left: 20px; /* 기본 여백(Gutter) */
+  }
+  #contact .address{
+    text-align: center;
+  }
+}

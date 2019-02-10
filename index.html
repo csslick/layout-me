@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Layout</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <!-- Font Aewsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> 
+
+  <!-- my css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ani.css">
+
+  <!-- my js -->
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header class="container-fluid">
+    <h1><a href="#home">ME</a></h1>
+    <a id="toggle-btn" href="#"><i class="fas fa-bars"></i></a>
+    <nav id="gnb">
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#works">works</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div>
+      <h2 class="display-1 text-center mb-0">Home</h2>
+      <p class="text-center">Creative Web Designer</p>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <div class="row">
+      <article class="col-md-6">
+        <h2>About me</h2>
+        <img src="http://placeimg.com/400/400/f" alt="face">
+        <h4 class="mt-4 text-gray font-weight-normal">what I am all about</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident possimus culpa est reprehenderit, quos dicta quibusdam repellat debitis saepe dolore recusandae enim a excepturi? Ea nisi rem consequatur excepturi cupiditate.</p>
+      </article>
+      <article class="col-md-6">
+        <h2 class="mb-4"><small>Experience</small></h2>
+        <span>Photoshop</span>
+        <div class="progress mb-3">
+          <div class="progress-bar will-play" style="width:0%">90%</div>
+        </div>
+        <span>Illustrator</span>
+        <div class="progress mb-3">
+          <div class="progress-bar will-play" style="width:0%">75%</div>
+        </div>
+        <span>HTML5</span>
+        <div class="progress mb-3">
+          <div class="progress-bar will-play" style="width:00%">80%</div>
+        </div>
+        <span>CSS3</span>
+        <div class="progress mb-3">
+          <div class="progress-bar will-play" style="width:00%">75%</div>
+        </div>
+        <span>JavaScript</span>
+        <div class="progress mb-3">
+          <div class="progress-bar will-play" style="width:00%">50%</div>
+        </div>
+        <span>Coffee</span>
+        <div class="progress mb-3">
+          <div class="progress-bar will-play" style="width:00%">99%</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="works" class="container-fluid">
+    <article class="container">
+    <h2>Works</h2>
+      <ul class="row no-gutters will-play">
+        <li class="col-sm-6 col-md-4"><img src="http://placeimg.com/400/300/a" alt="img"></li>
+        <li class="col-sm-6 col-md-4"><img src="http://placeimg.com/400/300/b" alt="img"></li>
+        <li class="col-sm-6 col-md-4"><img src="http://placeimg.com/400/300/c" alt="img"></li>
+        <li class="col-sm-6 col-md-4"><img src="http://placeimg.com/400/300/d" alt="img"></li>
+        <li class="col-sm-6 col-md-4"><img src="http://placeimg.com/400/300/e" alt="img"></li>
+        <li class="col-sm-6 col-md-4"><img src="http://placeimg.com/400/300/f" alt="img"></li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="contact" class="container-flid">
+    <div class="container">
+      <article class="row will-play">
+        <div class="col-md-8 form">
+          <h2>Contact</h2>
+          <form action="">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" id="name" placeholder="이름">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="이메일">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="" id="" rows="5" placeholder="내용을 입력해 주세요."></textarea>
+            </div>
+            <button type="submit" class="form-control">보내기</button>
+          </form>
+        </div>  
+        <div class="col-md-4 address">
+          <dl>
+            <dt>Location</dt>
+            <dd class="text-secondary">Seoul, Korea</dd>
+            <dt class="mt-4">Phone</dt>
+            <dd class="text-secondary">010-1234-9999</dd>
+            <dt class="mt-4">Email</dt>
+            <dd class="text-secondary">me@gmail.com</dd>
+            <dt class="mt-4">SNS</dt>
+            <dd class="sns">
+              <i class="fab fa-youtube fa-2x mr-2"></i>
+              <i class="fab fa-instagram fa-2x mr-2"></i>
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </dd>
+          </dl>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="container-fluid bg-dark">
+    <div class="row">
+      <div class="col-md-12 pt-4 pb-4 text-center">
+        <small class="text-light">&copy; 2019 ME, Theme Powered By </small>
+        <small class="text-light">CSSLICK</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
