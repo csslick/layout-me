@@ -39,7 +39,7 @@ $(function(){
     // 재생 구간 탐색
     $('section').each(function(i){
       console.log(i);
-      var y_offset = 300;
+      var y_offset = 500;
       section_top[i] = $('section').eq(i).offset().top;
 
       if(section_top[i] <= $(window).scrollTop() + y_offset){
